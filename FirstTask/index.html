@@ -11,40 +11,37 @@
 <ul>
     <li><a href="http://kubsu.ru/">Абсолютная ссылка на главную страницу сайта kubsu.ru</a></li>
     <li><a href="https://kubsu.ru/">Абсолютная ссылка на главную страницу сайта kubsu.ru с HTTPS</a></li>
-    <li><a href="http://kubsu.ru"><img src="image.jpg" alt="Ссылка-изображение"></a></li>
-    <li><a href="/inner-page">Сокращенная ссылка на внутреннюю страницу</a></li>
-    <li><a href="/">Сокращенная ссылка на главную страницу</a></li>
-    <li><a href="#fragment">Ссылка на фрагмент текущей страницы</a></li>
-    <li><a href="/page?param1=value1&param2=value2&param3=value3">Ссылка с тремя параметрами в URL</a></li>
-    <li><a href="/page?id=123">Ссылка с параметром id в URL</a></li>
-    <li><a href="current-page.html">Относительная ссылка на страницу в текущем каталоге</a></li>
-    <li><a href="about/page.html">Относительная ссылка на страницу в каталоге "about"</a></li>
-    <li><a href="../upper-level-page.html">Относительная ссылка на страницу уровнем выше</a></li>
-    <li><a href="../../two-levels-up-page.html">Относительная ссылка на страницу двумя уровнями выше</a></li>
-    <li>Этот текст содержит <a href="contextual-link.html">контекстную ссылку</a> в тексте абзаца.</li>
-    <li><a href="https://example.com#fragment">Ссылка на фрагмент страницы стороннего сайта</a></li>
-    <li>
-        <img src="map-image.jpg" alt="Карта изображений" usemap="#imagemap">
-        <map name="imagemap">
-            <area shape="rect" coords="34,44,270,350" href="rectangle-link.html" alt="Прямоугольная область">
-            <area shape="circle" coords="337,300,44" href="circle-link.html" alt="Круглая область">
-        </map>
-    </li>
+    <li><a href="https://youtube.com/playlist?list=OLAK5uy_kMXIYaAv8uFLoeVJvY4Pq80GrUQnvSEjo&si=wiWr29R297PUA-cz"><img src="./images/mj_cover.jpg" alt="Ссылка-изображение" width="220" height="220"></a></li>
+    <li><a href="./about/about-page.html">Сокращенная ссылка на внутреннюю страницу</a></li>
+    <li><a href="./index.html">Сокращенная ссылка на главную страницу</a></li>
+    <li><a href="#form">Ссылка на фрагмент текущей страницы</a></li>
+    <li><a href="./index.html?first=f&second=s&third=t">Ссылка с тремя параметрами в URL</a></li>
+    <li><a href="./index.html?id=123">Ссылка с параметром id в URL</a></li>
+    <li><a href="./current-page.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+    <li><a href="./about/about-page.html">Относительная ссылка на страницу в каталоге "about"</a></li>
+    <li><a href="./level1/level1-page.html">*для относительной ссылки на страницу уровнем выше*</a></li>
+    <li><a href="./level1/level2/level2-page.html">*для относительной ссылки на страницу двумя уровнями выше*</a></li>
+    <li>Один из лучших альбомов человечества: <a href="https://youtube.com/playlist?list=PL15ty5GYCv5u0_w7pusvZtUP225slLmRT&si=3nQ6dXCZwLiDwIIY">Dangerous</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Dangerous_(Michael_Jackson_album)#:~:text=Dangerous%20is%20one%20of%20the%20best%2Dselling%20albums%20of%20all%20time%2C%20having%20sold%20over%2032%20million%20copies%20worldwide%2C%20and%20was%20certified%208%C3%97%20Platinum%20by%20the%20Recording%20Industry%20Association%20of%20America%20(RIAA)%20in%20August%202018.">Ссылка на фрагмент страницы стороннего сайта</a></li>
+    <li> Ссылка из прямоугольных и круглых областей картинки (HTML-тег map):</li>
+        </ul>
+            <img src="./images/mj.jpg" width="300" height="220" alt="mj" usemap="#map">
+        <ul>
     <li><a href="">Ссылка с пустым href</a></li>
     <li><a>Ссылка без href</a></li>
-    <li><a href="nofollow.html" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
-    <li><a href="noindex.html" rel="noindex">Ссылка, запрещенная для индексации поисковиками</a></li>
+    <li><a href="index.html" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+    <li><a href="index.html" rel="noindex">Ссылка, запрещенная для индексации поисковиками</a></li>
     <li>
         <ol>
-            <li><a href="numbered-link1.html" title="Описание ссылки 1">Нумерованная ссылка 1</a></li>
-            <li><a href="numbered-link2.html" title="Описание ссылки 2">Нумерованная ссылка 2</a></li>
+            <li><a href="https://youtu.be/SDDC-QdOR14?si=fQB4i6FUhVUzxtDz" title="MJ 1997 show">Michael Jackson in Munich 1997</a></li>
+            <li><a href="https://youtu.be/Hxgo-Qu-ZZE?si=fCu-zfgO1HSnOAZs" title="MJ 1992 show">Michael Jackson in Bucharest 1992</a></li>
         </ol>
     </li>
-    <li><a href="ftp://user:password@ftp.example.com/file.txt">Ссылка на файл на сервере FTP с авторизацией</a></li>
+    <li><a href="ftp://user:password@something.com/file.txt">Ссылка на файл на сервере FTP с авторизацией</a></li>
 </ul>
  
 <h1>Форма</h1>
-<form action="submit.html" method="post">
+<form action="submitURL" method="POST">
     <label for="name">ФИО:</label>
     <input type="text" id="name" name="name" required><br><br>
  
