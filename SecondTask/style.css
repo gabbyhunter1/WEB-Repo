@@ -16,9 +16,8 @@ h1, h2, h3, h4 {
 
 table {
     width: 100%;
-    max-width: 100%;
     border-collapse: collapse;
-    margin: 0 auto;
+    margin: 20px 0;
 }
 
 table, th, td {
@@ -43,13 +42,19 @@ tbody tr:nth-child(odd) {
     padding: 20px;
     text-align: left;
     border-bottom: 1px solid #ccc;
-    width: 100%;
 }
 
 .site-header .logo {
     max-width: 150px;
-    display: block;
-    margin: 0 auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.site-header h1 {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 20px;
+    font-size: 24px;
 }
 
 .main-nav ul {
@@ -69,7 +74,7 @@ tbody tr:nth-child(odd) {
   color: #333;
 }
 
-.link-list {
+ul {
   margin-left: auto;
   margin-right: auto;
   width: fit-content;
@@ -77,106 +82,11 @@ tbody tr:nth-child(odd) {
 
 
 form {
-    width: 100%;
   text-align: center;
 }
 
 .site-footer {
-    width: 100%;
     background-color: #CCD5FF;
     padding: 10px;
     text-align: center;
-}
-
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.main-nav ul {
-    list-style-type: none;
-    padding: 0;
-    text-align: center;
-    display: block;
-}
-
-.main-nav ul li {
-    display: block;
-    margin: 0 15px;
-}
-
-.main-nav ul li a {
-  text-decoration: none;
-  font-weight: bold;
-  color: #333;
-}
-
-.site-header .main-nav .content .site-footer {
-    width: 100%;
-}
-
-table {
-    order: 1;
-}
-
-.link-list {
-    order: 2;
-}
-
-form {
-    order: 3;
-}
-
-.site-footer {
-    order: 4;
-}
-
-@media (min-width: 768px) {
-    body {
-        display: block;
-        margin: 0;
-        padding: 0;
-    }
-
-    .site-header {
-        background-color: #828ab1;
-        padding: 20px;
-        text-align: left;
-        border-bottom: 1px solid #ccc;
-    }
-    
-    .site-header .logo {
-        max-width: 150px;
-        display: inline-block;
-        vertical-align: middle;
-    }
-    
-    .site-header h1 {
-        display: inline-block;
-        vertical-align: middle;
-        margin-left: 20px;
-        font-size: 24px;
-    }
-
-    .main-nav ul {
-        list-style-type: none;
-        padding: 0;
-        text-align: center;
-    }
-    
-    .main-nav ul li {
-        display: inline-block;
-        margin: 0 15px;
-    }
-    
-    .main-nav ul li a {
-      text-decoration: none;
-      font-weight: bold;
-      color: #333;
-    }
-
-    table {
-        width: 40%;
-    }
 }
