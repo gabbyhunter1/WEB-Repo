@@ -19,11 +19,25 @@ body {
     width: 30px;
 }
 
+.section-container {
+    display: flex;
+    flex-direction: column;
+}
+
+#table-section {
+    order: -1;
+}
+
 form {
     text-align: center;
 }
 
 @media (min-width: 768px){
+    .section-container {
+        display: block;
+        flex-direction: column;
+    }
+
     .quote-title {
         font-size: 60px;
     }
