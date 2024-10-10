@@ -23,9 +23,49 @@ form {
     text-align: center;
 }
 
+/* DO NOT FORGET MOBILE!! */
+.section-header {
+    font-size: 56px;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+}
+
+.section-padding {
+    padding-top: 140px;
+    padding-bottom: 100px;
+}
+
+.text-dark {
+    color: #6e6e73 !important;
+}
+
+.text-light {
+    color: #86868b !important;
+}
+
+.text-light .highlight {
+    color: white;
+}
+
+.typography-body {
+    font-size: 17px;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+.highlight {
+    color: #1d1d1f
+}
+
+.card-title {
+    font-weight: 600;
+}
+
 @media (min-width: 768px){
     .quote-title {
-        font-size: 60px;
+        font-size: 80px;
+        font-weight: 650;
+        letter-spacing: -0.015em;
     }
 
     .nav-item {
@@ -35,5 +75,20 @@ form {
     .navbar-logo {
         height: 32px;
         width: 32px;
+    }
+
+    /* DO NOT FORGET MOBILE!! */
+    .section-header {
+        font-size: 56px;
+        font-weight: 600;
+        letter-spacing: -0.015em;
+    }
+
+    .section-padding {
+        padding-top: 200px;
+    }
+
+    .typography-body {
+        font-size: 25px;
     }
 }
