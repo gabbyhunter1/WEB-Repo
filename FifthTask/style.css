@@ -61,6 +61,11 @@ form {
     font-weight: 600;
 }
 
+.footer-text {
+    font-size: 14px;
+    color: #86868b
+}
+
 @media (min-width: 768px){
     .quote-title {
         font-size: 80px;
@@ -85,7 +90,7 @@ form {
     }
 
     .section-padding {
-        padding-top: 200px;
+        padding-top: 180px;
     }
 
     .typography-body {
