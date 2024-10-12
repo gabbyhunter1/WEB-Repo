@@ -8,6 +8,8 @@ body {
 
 .quote-title {
     font-size: 50px;
+    font-weight: 650;
+    letter-spacing: -0.015em;
 }
 
 .nav-item {
@@ -25,7 +27,13 @@ form {
 
 /* DO NOT FORGET MOBILE!! */
 .section-header {
-    font-size: 56px;
+    font-size: 38px;
+    font-weight: 600;
+    letter-spacing: -0.015em;
+}
+
+.headline {
+    font-size: 48px;
     font-weight: 600;
     letter-spacing: -0.015em;
 }
@@ -61,6 +69,35 @@ form {
     font-weight: 600;
 }
 
+.form-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+
+#merch-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Когда результат активен */
+#result.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
 .footer-text {
     font-size: 14px;
     color: #86868b
@@ -69,8 +106,6 @@ form {
 @media (min-width: 768px){
     .quote-title {
         font-size: 80px;
-        font-weight: 650;
-        letter-spacing: -0.015em;
     }
 
     .nav-item {
@@ -85,8 +120,10 @@ form {
     /* DO NOT FORGET MOBILE!! */
     .section-header {
         font-size: 56px;
-        font-weight: 600;
-        letter-spacing: -0.015em;
+    }
+
+    .headline {
+        font-size: 75px;
     }
 
     .section-padding {
@@ -95,5 +132,14 @@ form {
 
     .typography-body {
         font-size: 25px;
+    }
+
+    .form-title {
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+    }
+
+    #merch-form {
+        width: 500px;
     }
 }
