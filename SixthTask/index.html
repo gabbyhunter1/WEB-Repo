@@ -154,7 +154,7 @@
       <div class="row text-start">
         <h1 class="headline pb-5 text-white">BUY THE MERCHANDISE.</h1>
         <div class="col-lg">
-          <form class="mx-auto" id="merch-form">
+          <form class="mx-auto needs-validation" id="merch-form" autocomplete="off">
             <div class="mb-3">
               <label for="product" class="form-title text-black">Выберите мерч</label>
               <select id="product" name="product" class="form-control">
@@ -164,26 +164,36 @@
               </select>
               <div id="checkboxDiv" class="mt-2 mb-3 d-none" style="text-align: start;">
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="5" id="">
-                  <label class="form-check-label" for="flexCheckDefault"></label>
+                  <input class="form-check-input" type="checkbox" value="1">
+                  <label class="form-check-label" for="keychain">Добавить Thriller брелок в подарок - 1$</label>
                 </div>
                 <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="" checked>
-                  <label class="form-check-label" for="">
-                    Checked checkbox
-                  </label>
+                  <input class="form-check-input" type="checkbox" value="5">
+                  <label class="form-check-label" for="signature">Распечатать подпись сзади - 5$</label>
+                </div>
+              </div>
+              <div id="radioDiv" class="mt-2 mb-3 d-none" style="text-align: start;">
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" value="4" name="merchClothType">
+                  <label class="form-check-label" for="cotton">Хлопок - 4$</label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="radio" value="3" name="merchClothType">
+                  <label class="form-check-label" for="len">Лен - 3$</label>
+                  <div class="invalid-feedback">Выберите тип ткани</div>
                 </div>
               </div>
             </div>
             <div class="mb-3">
               <label for="quantity" class="form-title text-black">Количество товара</label>
-              <input type="number" class="form-control" id="quantity" name="quantity" placeholder="Введите количество">
+              <input type="number" class="form-control" id="quantity" name="quantity" placeholder="Введите количество" min="1" required>
+              <div class="invalid-feedback">Введено неккоректное количество</div>
             </div>
             <div class="image-container mb-4" data-aos="fade-in">
               <img id="product-image" class="img-fluid" src="//mjmerchofficial.com/cdn/shop/files/Artboard29_1445x.jpg?v=1705685357" alt="Изображение товара">
             </div>
-            <button id="calculate" class="btn btn-primary">Рассчитать стоимость</button>
-            <p id="result" class="mt-3"></p>
+            <button type="button" id="calculate" class="btn btn-primary">Рассчитать стоимость</button>
+            <p id="result" class="mt-3 d-none"></p>
           </form>
         </div>
       </div>
