@@ -27,7 +27,7 @@ prevBtn.addEventListener('click', () => {
 
     if (currentIndex > 0) {
         currentIndex--;
-        slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+        slider.style.transform = `translateX(-${currentIndex * (slideWidth + 20)}px)`;
     }
     updateButtonStates();
 });
