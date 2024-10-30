@@ -21,7 +21,6 @@ body {
   width: 30px;
 }
 
-/* DO NOT FORGET MOBILE!! */
 .section-header {
   font-size: 38px;
   font-weight: 600;
@@ -86,14 +85,14 @@ body {
 }
 
 .slider {
-  width: 400px;
-  height: 600px;
+  width: 380px;
+  height: 560px;
   display: flex;
   transition: transform 0.5s ease;
 }
 
 .slider img {
-  margin-right: 40px;
+  margin-right: 20px;
 }
 
 button {
@@ -104,17 +103,15 @@ button {
   background-color: inherit;
 }
 
-/* Styles for the button image */
 .button-image {
-  width: 36px; /* Adjust size as needed */
+  width: 36px;
   height: 36px;
   transition: filter 0.3s ease;
 }
 
-/* Grays out the image when button is disabled */
 button:disabled .button-image {
-  filter: grayscale(100%); /* Turns image gray */
-  opacity: 0.5; /* Optional: adds a faded effect */
+  filter: grayscale(100%);
+  opacity: 0.5;
 }
 
 .slide {
@@ -156,7 +153,6 @@ button:disabled .button-image {
     width: 32px;
   }
 
-  /* DO NOT FORGET MOBILE!! */
   .section-header {
     font-size: 56px;
   }
@@ -176,6 +172,11 @@ button:disabled .button-image {
   .form-title {
     font-family: "Inter", sans-serif;
     font-size: 20px;
+  }
+
+  .slider {
+    width: 400px;
+    height: 600px;
   }
 
   #merch-form {

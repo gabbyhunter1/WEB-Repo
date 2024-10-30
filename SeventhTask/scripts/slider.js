@@ -1,4 +1,5 @@
 const slider = document.getElementById('slider');
+const img = slider.querySelectorAll("img")[0];
 const nextBtn = document.getElementById('nextBtn');
 const prevBtn = document.getElementById('prevBtn');
 let currentIndex = 0;
@@ -11,19 +12,23 @@ function updateButtonStates() {
 }
 
 nextBtn.addEventListener('click', () => {
-    const totalSlides = slider.children.length + 1;
+    const slideWidth = img.clientWidth;
+    const totalSlides = slider.children.length;
 
-    // Move the slider to the left
-    currentIndex = (currentIndex + 1) % totalSlides; // Cycle through slides
-    slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+    if (currentIndex < totalSlides - 1) {
+        currentIndex++;
+        slider.style.transform = `translateX(-${currentIndex * (slideWidth + 20)}px)`;
+    }
     updateButtonStates();
 });
 
 prevBtn.addEventListener('click', () => {
-    const totalSlides = slider.children.length;
+    const slideWidth = slider.children[0].offsetWidth;
 
-    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides; // Move to the previous slide
-    slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+    if (currentIndex > 0) {
+        currentIndex--;
+        slider.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    }
     updateButtonStates();
 });
 
