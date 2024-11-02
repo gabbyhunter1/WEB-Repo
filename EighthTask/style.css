@@ -89,6 +89,12 @@ body {
   margin-right: 20px;
 }
 
+.slide {
+  min-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
 button {
   border: none;
   padding: 0;
@@ -106,12 +112,6 @@ button {
 button:disabled .button-image {
   filter: grayscale(100%);
   opacity: 0.5;
-}
-
-.slide {
-  min-width: 100%;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 #result {
